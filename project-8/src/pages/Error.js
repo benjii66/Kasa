@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { ErrorPage } from '../components/error/ErrorPage'
 
-const Error = () => {
+export const Error = () => {
  const navigateError = useNavigate();
 
  // Redirect user to error page after a 10 millisecond delay
@@ -22,5 +22,3 @@ const Error = () => {
     </>
  )
 }
-
-export default Error

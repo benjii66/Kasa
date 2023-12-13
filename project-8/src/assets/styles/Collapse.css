@@ -1,0 +1,25 @@
+.collapse {
+  border: 1px solid #ccc;
+  margin: 16px 0;
+}
+
+.collapse-header {
+  cursor: pointer;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+}
+
+.collapse-content {
+  padding: 8px 16px;
+}
+
+.chevron {
+  transition: transform 0.3s ease;
+}
+
+.rotated {
+  transform: rotate(180deg);
+}

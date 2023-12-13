@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom' 
 
-const NavigationBar = () => {
+export const NavigationBar = () => {
   return (
     <nav>
     <Link to="/" aria-label="Home Page">
@@ -13,5 +13,3 @@ const NavigationBar = () => {
   </nav>
   )
 }
-
-export default NavigationBar

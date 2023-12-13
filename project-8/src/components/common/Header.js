@@ -1,9 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../../assets/images/LOGO.svg';
-import NavigationBar from './NavigationBar';
+import {NavigationBar} from './NavigationBar';
 
-const Header = () => {
+//importing logo image
+import Logo from '../../assets/images/LOGO.svg';
+
+//header component
+export const Header = () => {
   return (
     <header>
       <figure>
@@ -16,4 +19,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+ 
