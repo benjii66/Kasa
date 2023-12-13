@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 
+//404 error component
 export const ErrorPage = () => {
   return (
 

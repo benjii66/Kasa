@@ -1,5 +1,6 @@
 import logo from "../../assets/images/logo-footer.svg"
 
+//display the footer
 export const Footer = () => {
         return (
             <footer>

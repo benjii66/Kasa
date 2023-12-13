@@ -4,15 +4,18 @@ import { useNavigate } from 'react-router-dom'
 import { ErrorPage } from '../components/error/ErrorPage'
 
 export const Error = () => {
+  //useNavigate to go to the Error page
  const navigateError = useNavigate();
 
- // Redirect user to error page after a 10 millisecond delay
+ //useEffect to redirect after 10 milliseconds
  useEffect(() => {
+  //set a timer out
    const redirectionTimer = setTimeout(() => {
+    //redirect to the Error page
     navigateError("/error");
    }, 10); 
 
-   // Clean up: clear the timeout if the component is unmounted
+   //clean with a cancellation if the component is disassembled
    return() => clearTimeout(redirectionTimer);
  }, [navigateError]);
 
