@@ -18,10 +18,7 @@ export const Carousel = ({ slides }) => {
 
   return (
     <div className="carousel-container">
-      {/* check if there's is more than one slide to display  */}
-      {multipleSlides && (
-        <div className="carousel">
-          {/* display the current slide  */}
+          {/*Always display the first / current slide  */}
           <img src={slides[currentSlide]} alt={`Diapositive ${currentSlide + 1}`} className="carousel-slides" />
 
         {/* display the slides arrows (left and right)  */}
@@ -41,14 +38,10 @@ export const Carousel = ({ slides }) => {
                 className="rightArrow"
                 aria-label="Flèche droite"
               />
-            </>
-          )}
-          {/* display the images counter if there's more than 1 slides  */}
-          {multipleSlides && (
+            {/* display the images counter if there's more than 1 slides  */}
             <div className="image-count">{`${currentSlide + 1} / ${slides.length}`}</div>
-          )}
+            </>
+          )}         
         </div>
-      )}
-    </div>
-  );
+   );
 };
