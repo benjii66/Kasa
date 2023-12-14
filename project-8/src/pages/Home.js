@@ -21,17 +21,17 @@ export const Home = () => {
     {/* just to display the banner  */}
     
     <Banner/>
-    <div>
+    <div className='cards-container'>
       {/* mapping of the houses and display their cards  */}
 
       {data.map((house,id) => (
-        <div>
+        <div className='card_house' key={id}>
 
           {/* use Link to create a link on the houses page */}
-          <Link to={`/logement/${house.id}`}>
+          <Link to={`/logement/${house.id}`} aria-label='House Page' className='link_card_house'>
 
             {/* Card house Rendering with his cover image and title */}
-          <Card key={id} cover={house.cover} title={house.title} />
+          <Card cover={house.cover} title={house.title} />
           </Link>
         </div>
       ))}

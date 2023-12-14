@@ -1,3 +1,5 @@
+
+//card component to display a house
 export const Card = ({cover, title}) => {
     return (
 		<article className="card-logement">

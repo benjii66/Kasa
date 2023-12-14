@@ -1,19 +1,20 @@
-import React from 'react'
-import { Link } from 'react-router-dom' 
+import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
-
-//navbar component to display the links
 export const NavigationBar = () => {
-    return (
-      <nav>
-        {/* GOTO home page  */}
-      <Link to="/" aria-label="Home Page">
+  const location = useLocation();
+
+  const isHome = location.pathname === '/';
+  const isAbout = location.pathname === '/About';
+
+  return (
+    <nav className='nav-header'>
+      <Link to="/" aria-label="Home Page" className={`nav-header_link-home ${isHome ? 'active' : ''}`}>
         Accueil
       </Link>
-      {/* GOTO About page  */}
-      <Link to="/About" aria-label="About Page">
+      <Link to="/About" aria-label="About Page" className={`nav-header_link-about ${isAbout ? 'active' : ''}`}>
         A Propos
       </Link>
     </nav>
-    )
-}
+  );
+};

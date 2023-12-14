@@ -1,0 +1,71 @@
+.card-logement {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #f7f7f7; 
+  margin: 20px;
+}
+
+.card-logement img {
+  width: 331px;
+  height: 220px;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-logement__layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  padding: 10px;
+  text-align: left;
+  box-shadow: inset 0 -10px 10px 30px rgba(0, 0, 0, 0.212);
+}
+
+.card-logement__title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+@media screen and (min-width: 769px) {
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 40px; 
+    padding: 25px 15px;
+  }
+  .cards-container{
+    border-radius: 2%;
+    margin-top: 2%;
+    background-color: rgba(207, 205, 205, 0.377);
+  }
+  .card_house{
+    margin-left: 10%;
+    width:75%;
+    height: 20%;
+  }
+
+  .card-logement {
+    margin: 0;
+    background-color: #f7f7f7;
+  }
+
+
+  .card-logement__title {
+    font-size: 1.2em;
+    padding: 0.5em 0; 
+  }
+
+  .card-logement:hover img {
+    transform: scale(1.05);
+  }
+
+  .card-logement img {
+    width: 528px;
+    height: 235px;
+  }
+}

@@ -8,15 +8,13 @@ import Logo from '../../assets/images/LOGO.svg';
 //header component
 export const Header = () => {
   return (
-    <header>
-      <figure>
+    <header className='headerWrap'>
+      <figure className='headerWrap_fig'>
         <Link to="/" aria-label="Logo">
-          <img src={Logo} alt="Logo" />
+          <img src={Logo} alt="Logo" className='logo'/>
         </Link>
       </figure>
-      <NavigationBar />
+      <NavigationBar className="nav-header"/>
     </header>
   );
-};
-
- 
+}; 

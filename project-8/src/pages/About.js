@@ -27,13 +27,12 @@ export const About = () => {
   return (
 
    <>
-      <img src={aboutBanner} alt="a-propos" aria-label='about'/>
+      <img src={aboutBanner} alt="a-propos" aria-label='about' className='aboutBackground -msk'/>
       {aboutContent.map((aboutRuleContent, rule) => (
         <Collapse
           key={rule}
           title={aboutRuleContent.title}
           content={aboutRuleContent.content}
-          aboutStyle="about-style"
         />
       ))}
    </>

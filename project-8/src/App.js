@@ -4,8 +4,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Header } from './components/common/Header';
 import { Home   } from './pages/Home';
 import { About  } from './pages/About';
+
 import { Houses } from './pages/Houses';
 import { Error  } from './pages/Error';
+
+import { Footer } from "./components/common/Footer"
 
 function App() {
   return (
@@ -20,6 +23,7 @@ function App() {
               <Route path="*" element={<Error />} />
             </Routes>
           </main>
+          <Footer/>
       </div>
     </Router>
   );

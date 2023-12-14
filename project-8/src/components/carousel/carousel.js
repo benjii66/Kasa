@@ -22,7 +22,7 @@ export const Carousel = ({ slides }) => {
       {multipleSlides && (
         <div className="carousel">
           {/* display the current slide  */}
-          <img src={slides[currentSlide]} alt={`Diapositive ${currentSlide + 1}`} />
+          <img src={slides[currentSlide]} alt={`Diapositive ${currentSlide + 1}`} className="carousel-slides" />
 
         {/* display the slides arrows (left and right)  */}
           {multipleSlides && (

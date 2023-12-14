@@ -6,8 +6,8 @@ export const Tags = (props) => {
   //extract the "tag" property from the props
   const {tag} = props;
     return (
-    <div>
-        <span>{tag}</span>
+    <div className='tagContainer'>
+        <span className='tagButton'>{tag}</span>
     </div>
   )
 }
