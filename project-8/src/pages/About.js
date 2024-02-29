@@ -1,4 +1,3 @@
-import React from 'react'
 import { Collapse } from "../components/common/Collapse"
 
 import aboutBanner from "../assets/images/about-background.png"

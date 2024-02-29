@@ -1,6 +1,6 @@
 import React from 'react'
 
-//host compoentn to display the host and his profile picture
+//host component to display the host and his profile picture in the house page section
 export const Host = (props) => {
 
 	//extract the properties 

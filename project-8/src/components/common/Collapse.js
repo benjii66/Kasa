@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import Chevron from "../../assets/images/vectorBas.svg";
 
 //Collapse will display/mask the content
-export const Collapse = ({ title, content }) => {
+export const Collapse = (props) => {
+
+  //destructuring the properties for a better readability
+  const {title, content} = props;
   //state to follow the open/close status
   const [isOpen, setIsOpen] = useState(false);
 
