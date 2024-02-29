@@ -9,12 +9,12 @@ export const Host = (props) => {
   return (
     <aside className="host-area">
 		{/* display his name  */}
-			<div className="host-name">{hostName}</div>
+		<div className="host-name">{hostName}</div>
 			{/* display his picture  */}
 			<div className="hostPicture">
 				<img src={hostPic} alt={id} aria-label={id}/>
 			</div>
-		</aside>
+	</aside>
   )
 }
 

@@ -1,8 +1,9 @@
 import { Collapse } from "../components/common/Collapse"
-
 import aboutBanner from "../assets/images/about-background.png"
 
+//the about section of the website
 
+//the collapse content
 const aboutContent = [
   {
     title: "Fiabilité",
@@ -27,6 +28,7 @@ export const About = () => {
 
    <>
       <img src={aboutBanner} alt="a-propos" aria-label='about' className='aboutBackground -msk'/>
+     {/* we display the collapse content */}
       {aboutContent.map((aboutRuleContent, rule) => (
         <Collapse
           key={rule}

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
+// NavigationBar component to display Accueil and A Propos buttons
 export const NavigationBar = () => {
   const location = useLocation();
 

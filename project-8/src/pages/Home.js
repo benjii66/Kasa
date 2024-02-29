@@ -22,8 +22,8 @@ export const Home = () => {
     
     <Banner/>
     <div className='cards-container'>
-      {/* mapping of the houses and display their cards  */}
 
+      {/* mapping of the houses and display their cards  */}
       {data.map((house,id) => (
         <div className='card_house' key={id}>
 

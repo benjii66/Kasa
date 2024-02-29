@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 
-//404 error component
+//404 error component who gets rerouting with "error" into the URL
+//on the Error.js file thanks to the useNavigate hook
 export const ErrorPage = () => {
   return (
 

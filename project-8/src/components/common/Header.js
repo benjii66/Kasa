@@ -14,6 +14,7 @@ export const Header = () => {
           <img src={Logo} alt="Logo" className='logo'/>
         </Link>
       </figure>
+      {/* navbar with Accueil and A Propos buttons */}
       <NavigationBar className="nav-header"/>
     </header>
   );
