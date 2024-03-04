@@ -12,7 +12,9 @@
 
 .carousel-slides {
   width: 100%;
+  height: 250px;
   display: block;
+  object-fit: cover;
 }
 
 .leftArrow,
@@ -50,7 +52,7 @@
 
   .carousel-slides{
     width: 100%;
-    height: 500px;
+    height: 50vh;
     object-fit: cover;
   }
   .image-count {
