@@ -36,7 +36,7 @@ Le site est hébergé et accessible à l'adresse suivante : https://kasa-silk.ve
 ### Cloner le répertoire 
 
 ```shell
-git clone https://github.com/benjii66/Kasa
+git clone https://github.com/benjii66/Kasa.git
 cd project-8
 npm install 
 npm start
