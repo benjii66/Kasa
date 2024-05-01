@@ -1,5 +1,8 @@
 # Créez une application web de location immobilière avec React 
 
+>[!NOTE]
+>Projet réalisé lors de ma formation d'intégrateur web au sein d'OpenClassrooms
+
 Le but de ce projet est d'implémenter le front-end d'une application immobilière, Kasa, utilisant React et React Router pour offrir une interface utilisateur réactive et interactive.
 
 ## Apprentissage des outils/technologies suivantes : 
